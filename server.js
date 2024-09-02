@@ -1,9 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require("dotenv");
+const cors = require("cors");
 
 dotenv.config();
-const app = express()
+const app = express();
 const PORT =3500;
 
 
@@ -17,6 +18,7 @@ const wishlistRouter = require("./routs/wishlist.router");
 
 const connectDB = require('./config/dbconfig');
 
+app.use(cors());
 app.use(express.json());
 connectDB();
 
