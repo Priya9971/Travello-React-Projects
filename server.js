@@ -27,7 +27,6 @@ app.use("/api/hoteldata", hotelDataAddedToDBRouter);
 app.use("/api/hotels", hotelRouter);
 app.use("/api/categorydata", categoryDataAddedToDBRouter);
 app.use("/api/category", categoryRouter);
-app.use("/api/hotels", singleHoterRouter);
 app.use("/api/auth", authRouter);
 app.use("/api/wishlist", wishlistRouter);
 
